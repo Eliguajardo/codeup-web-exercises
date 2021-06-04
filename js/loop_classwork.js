@@ -15,3 +15,13 @@ do{
     alert("Doing stuff");
     notDone = confirm("Again");
 }while (notDone);
+
+
+var badData = false;
+
+function validateNumber() {
+    var value = Prompt("Enter a number");
+    badData = typeof(value) != "number"
+    while(!badData);
+    return value;
+}
