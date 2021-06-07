@@ -21,4 +21,4 @@ console.log("Yikes! Skipping number " + index);
 }
 
 
-alert(odd_Number);
+
