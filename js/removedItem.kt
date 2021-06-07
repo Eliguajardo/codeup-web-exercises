@@ -1,0 +1,1 @@
+var removedItem = todoList.pop();
