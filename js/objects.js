@@ -35,7 +35,8 @@
      */
 
 
-
+var sayHello = "Hello from Eli Guajardo!"
+    console.log(sayHello)
 
 
 
@@ -56,6 +57,10 @@
      * represents one shopper. Use a foreach loop to iterate through the array,
      * and console.log the relevant messages for each person
      */
+
+
+
+
 
     // var shoppers = [
     //     {name: 'Cameron', amount: 180},
