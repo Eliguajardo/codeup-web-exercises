@@ -23,7 +23,6 @@
 // "object"
 
 
-
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -35,13 +34,8 @@
      */
 
 
-var sayHello = "Hello from Eli Guajardo!"
+    var sayHello = "Hello from Eli Guajardo!"
     console.log(sayHello)
-
-
-
-
-
 
 
     /** TODO:
@@ -61,12 +55,39 @@ var sayHello = "Hello from Eli Guajardo!"
 
 
 
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+/*
+    shoppers.forEach(function (shopper))
+    if (shopper[0] <= 200)
+        console.log(shoppers.name + "spent: $" + shoppers[0].amount);
+    else {
+        let discount = shopper.amount * .12;
+        let total = shopper.amount - discount;
+        console.log(shoppers[0].name + " get a discount of $ " + discount + " owes: $" + total);
+    }
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+ */
+    shoppers.forEach(function (shopper)) {
+
+        if (shoppers[0].amount <= 200) {
+            let amount = shoppers[1].amount;
+            console.log(shoppers[0].name + "owes $" + amount.toFixed(2));
+        } else {
+            //calculate the discount
+            let discount = shoppers[0].amount * .12;
+            let amount = shoppers[0].amount - discount;
+            console.log(shoppers[0].name + "spent $" + shoppers[0].amount + " gets a discount" + discount.toFixed(2) + "and owes $" + "discount amount");
+        }
+    });
+
+
+
+
+
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -81,7 +102,44 @@ var sayHello = "Hello from Eli Guajardo!"
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
-    /**
+
+    var books = [
+        {title:'American psycho',
+            genre: ["fiction"],
+            author : {
+                first_name:'Mike',
+                last_name:'Jones'}},
+        {title:'Man without a face',
+            genre: ["thriller"],
+            author: {
+                first_name:'Paul',
+                last_name:'Wall'}},
+        {title:'Hope they serve beer in hell',
+            genre: ["comedy"],
+
+            author: {
+                first_name:'Emanual',
+                last_name:'Lewis'}},
+        {title:'Casino',
+            genre: ["non-fiction"],
+
+            author: {
+                first_name:'Pauly',
+                last_name:'The butcher'}},
+        {title:'The last Dance',
+            genre: ["fiction"],
+
+            author: {
+                first_name:'Micheal',
+                last_name:'Jordan'}}];
+
+    console.log(books[1].title);
+    console.log(books[1].author[1]);
+    console.log(books[1].author.last_name);
+
+
+
+/**
      * TODO:
      * Loop through the books array and output the following information about
      * each book:
@@ -105,6 +163,11 @@ var sayHello = "Hello from Eli Guajardo!"
      *      ---
      *      ...
      */
+
+        console.log("book# 1");
+        console.log("title: ")
+
+
 
     /**
      * Bonus:
