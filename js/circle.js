@@ -1,4 +1,4 @@
-(function() {
+//(function() {
     "use strict";
 
     // create a circle object
@@ -41,4 +41,4 @@
     console.log("Circle information rounded to the nearest whole number");
     circle.logInfo(true);
     console.log(circle.getArea())
-})();
+}
