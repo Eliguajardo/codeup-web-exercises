@@ -1,0 +1,8 @@
+.jumbotron{
+    align-items: stretch;
+}
+.d-block {
+    color: lightgray;
+    backdrop-filter: drop-shadow(px);
+    text-align: center;
+}
