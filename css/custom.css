@@ -1,8 +1,14 @@
 .jumbotron{
-    align-items: stretch;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 .d-block {
     color: lightgray;
-    backdrop-filter: drop-shadow(px);
+
     text-align: center;
+}
+
+.header-img{
+
 }
