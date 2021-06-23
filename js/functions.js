@@ -8,9 +8,11 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
-function sayHello(name {
-    return "Hello, " + name + "!";
-})
+
+function sayHello(name){
+    if (name === "eli")
+    return "Hello, name!"
+}
 
 /**
  * TODO:
