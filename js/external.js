@@ -20,4 +20,20 @@ prompt("how long will you be renting the little mermaid?");
 
 prompt(parseFloat(x,y,z) * 3);
 
+//google,amazon,facebook
+var google = 400;
+    prompt("google pay total")
+    alert(google /= 6);
+
+var amazon = 380;
+    prompt("amazon pay");
+    alert(amazon /= 4);
+
+var facebook = 350;
+    prompt("facebook");
+    alert(facebook /= 10)
+
+prompt(parseFloat(amazon,facebook,google).toFixed(amazon,facebook,google))
+
+
 
