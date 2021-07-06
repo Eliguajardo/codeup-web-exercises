@@ -29,3 +29,13 @@ console.log(stuff[3]);
 for(let number = 0; number)
 
 
+// TODO: Create a function named capitalizeAllNames that accepts an array of strings and returns the array with all of its elements capitalized.
+// Example:  capitalizeAllNames(["bob","Seth","TOFU","Toyota"]) ---- returns ----> ["BOB","SETH","TOFU","TOYOTA"]
+
+    function capitalizeAllNames()
+
+
+// TODO: Create a function named capitalizeFirstLetter that accepts an array of strings and returns the array with all of the first letters in
+//  each string being capitalized while having the rest of the string lowercase look at the example below for reference.
+// Example:  capitalizeFirstLetter(["bob","Seth","TOFU","Toyota"]) ---- returns ----> ["Bob","Seth","Tofu","Toyota"]
+
