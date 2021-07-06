@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM: Query and Modify</title>
+
 </head>
 <body>
 
 <h1 id="main-header">Hello World!</h1>
+<button id="btn1">Button1!</button>
+<button id="btn2">Button2!</button>
+<button id="btn3">Button3!</button>
+<button id="btn4">Button4!</button>
 <ul>
     <li data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
@@ -67,6 +72,14 @@
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
         subParagraph.innerText = "Mission Accomplished!";
+
+        var listener = function (event) {
+            alert('You clicked the button!');
+        }
+        document.getElementById('btn1').addEventListener('click', listener);
+        document.getElementById('btn2').addEventListener('click', listener);
+        document.getElementById('btn3').addEventListener('click', listener);
+        document.getElementById('btn4').addEventListener('click', listener);
     })();
 </script>
 </body>
