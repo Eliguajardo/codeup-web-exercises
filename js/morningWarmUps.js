@@ -34,15 +34,16 @@ function capitalizeAllNames(str){
 // July 7th 2021
 // TODO: Create a method on the object down below named getFullName that when called returns the users full name using the "this" key term.
 // Example: personOne.getFullName() ---- returns ----> "silvia floopertan"
-personOne.prototype.getFullName = function() {
-    return `${this.firstName} ${this.lastName}`;
+
     var personOne = {
         firstName: "silvia",
         lastName: "floopertan",
         ageInYears: 34,
-        heightInInches: 65
-    }
-};
+        heightInInches: 65,
+        getFullName: function(){
+            return this.firstName + " " + this.lastName
+        }
+}
 
 
 
@@ -52,10 +53,9 @@ personOne.prototype.getFullName = function() {
 //  users full name with both first letters in the names being capitalized look at example down below for more reference.
 // Example: personOne.getNicelyFormattedFullName() ---- returns ----> "Dan Valdarez"
 
-function getNicelyFormattedFullName(str) {
-    return str.replace(/\w\S*/g, function(txt){
+function getNicelyFormattedFullName(txt) {
         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-    });
+
 }
 
 var personTwo = {
@@ -64,8 +64,14 @@ var personTwo = {
     ageInYears: 61,
     heightInInches: 73
 }
+personTwo.getNicelyFomattedFullName = function(){
+    return ${formatName(this.firstName)} ${formatName(this.lastName)};
+}
+
 // TODO: Create a method on the object below that gives us the behavior that the example implies.
 // Example: personThree.intro() ---- returns ----> "Hello, My name is Arlene Martinez and I am 25 years old"
+
+
 var personThree = {
     firstName: "arlene",
     lastName: "martinez",
@@ -73,7 +79,9 @@ var personThree = {
     heightInInches: 62
 }
 
+personThree.info = function(){
 
+}
 
 
 
