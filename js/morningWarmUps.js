@@ -28,7 +28,11 @@ function capitalizeAllNames(str){
 // TODO: Create a function named capitalizeFirstLetter that accepts an array of strings and returns the array with all of the first letters in
 //  each string being capitalized while having the rest of the string lowercase look at the example below for reference.
 // Example:  capitalizeFirstLetter(["bob","Seth","TOFU","Toyota"]) ---- returns ----> ["Bob","Seth","Tofu","Toyota"]
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
+console.log(capitalizeFirstLetter('string'));
 
 
 // July 7th 2021
@@ -65,7 +69,7 @@ var personTwo = {
     heightInInches: 73
 }
 personTwo.getNicelyFomattedFullName = function(){
-    return ${formatName(this.firstName)} ${formatName(this.lastName)};
+     ${formatName(this.firstName)} ${formatName(this.lastName)}
 }
 
 // TODO: Create a method on the object below that gives us the behavior that the example implies.
