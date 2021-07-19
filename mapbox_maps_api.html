@@ -26,13 +26,22 @@
 
 <!-- Custom JS -->
 <script>
-    mapboxgl.accessToken = YOUR_API_TOKEN_HERE;
+
+    mapboxgl.accessToken = pk.eyJ1IjoiZWxpYXNnMjMiLCJhIjoiY2tyNTF0NTVtMzFmbTJwbWZzaDFqMms1aSJ9.VcH61_KAxQ17X78joi17MA;
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v9',
         zoom: 10,
         center: [-98.4916, 29.4252]
     });
+
+    // the  geocode method from mapbox-geocoder-utils.js
+    geocode("600 Navarro St #350, San Antonio, TX 78205", MAPBOX_KEY).then(function(coordinates) {
+        console.log(coordinates);
+        map.setCenter(coordinates);
+        map.setZoom(20);
+    });
+
 </script>
 </body>
 </html>
