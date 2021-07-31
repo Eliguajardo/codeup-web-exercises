@@ -1,14 +1,20 @@
-.jumbotron{
-    display: flex;
-    justify-content: center;
+.jumbotron-fluid {
+    background-image:url("../img/pizza.png");
     width: 100%;
+    margin: ;
 }
-.d-block {
-    color: lightgray;
-
-    text-align: center;
+.display-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    opacity: .7;
 }
-
-.header-img{
-
+.card-header {
+    list-style-type: none;
+}
+.next  {
+    display: flex;
+    align-items: right;
+    justify-content: right;
 }
