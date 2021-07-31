@@ -9,9 +9,14 @@
     //
 
     fetch ( "data/inventory.json")
-    .then( function (response){
-        return response.json
-    }).then( function (jsonData){
+    // .then( function (response){
+    //     return response.json
+    // }).then( function (jsonData){
+    //     console.log(jsonData)
+    // })
+    .then( (response)=>{
+        return response.json();
+    }).then( (jsonData) =>{
         console.log(jsonData)
     })
 
