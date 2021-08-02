@@ -1,7 +1,8 @@
-.jumbotron-fluid {
-    background-image:url("../img/pizza.png");
-    width: 100%;
-    margin: ;
+.jumbotron{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    background-image: url("../img/pizza.png");
 }
 .display-4 {
     display: flex;
