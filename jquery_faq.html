@@ -2,84 +2,159 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
-  <link rel="stylesheet" href="css/jquery_faq.css">
+  <title>jQuery_FAQs</title>
+
+  <style>
+    .invisible{
+      visibility: hidden;
+    }
+
+    .highlight{
+      background-color: yellow;
+    }
+
+  </style>
+  <script src="js/jquery.js"></script>
 </head>
 <body>
-<button id="push">Toggle invisible</button>
-<p>National Park FAQ:</p>
+
+<h1>10 Frequently Asked Questions About National Parks</h1>
+
+<button class="answers">Show All Answers</button>
+
 <dl>
-  <dt>How many employees are in the National Park Service?</dt>
-  <dd>Permanent, temporary, and seasonal employees: Approximately 20,000</dd>
-  <br>
-  <dt>How old is the National Park System?</dt>
-  <dd>The National Park Service was created by an act signed by President Woodrow Wilson on<br>
-    August 25, 1916. Yellowstone National Park was established by an act signed by President <br>
-    Ulysses S. Grant on March 1, 1872, as the nation's first national park. View the National<br>
-    Park System timeline.</dd>
-  <br>
-  <dt>What is the origin of the National Park Service arrowhead?</dt>
-  <dd>The arrowhead was authorized as the official National Park Service emblem by the Secretary of<br>
-    the Interior on July 20, 1951. The components of the arrowhead may have been inspired by key <br>
-    attributes of the National Park System, with the sequoia tree and bison representing vegetation<br>
-    and wildlife, the mountains and water representing scenic and recreational values, and the arrowhead <br>
-    itself representing historical and archeological values. Read more about the history of the arrowhead<br>
-    and other elements of NPS visual design.</dd>
-  <br>
-  <dt>What is the largest national park site? Smallest?</dt>
-  <dd>Largest: Wrangell-St. Elias National Park and Preserve, AK, at 13.2 million acres</dd>
-  <br>
-  <dt>What is the Smallest national park site? ?</dt>
-  <dd>Smallest: Thaddeus Kosciuszko National Memorial, PA, at 0.02 acres</dd>
-  <br>
-  <dt>How many people visit the national parks?</dt>
-  <dd>Total recreation visitors to the national parks in 2019: 327,516,619.</dd>
-  <br>
-  <dt>Can I bring my pet to a national park?</dt>
-  <dd>Some national parks welcome pets—in developed areas, on many trails<br>
-    and campgrounds, and in some lodging facilities.</dd>
-  <br>
-  <dt>How do I reserve a tour in a park?</dt>
-  <dd>You can book some park tours through Recreation.gov such as Pearl Harbor <br>
-    National Memorial, many Mammoth Cave National Park cave tours, Independence <br>
-    National Historical Park tours, and more. Not all parks participate in this reservation <br>
-    service. For more information on tours offered at a specific park, please see the<br>
-    park search.</dd>
-  <br>
-  <dt>Who is the director of the National Park Service?</dt>
-  <dd>Shawn Benge, Deputy Director, Operations, is exercising<br>
-    the delegated authority of the Director of the National Park Service.</dd>
-  <br>
-  <dt>Where can I find a park map?/dt>
-  <dd>You can view maps on specific park websites or find naional park, National<br>
-    Park System, National Trails System, and other maps.</dd>
-  <button id="button">highlight</button><br>
+  <dt>Q1: Is this a park?</dt>
+  <dd>A1: Yes</dd>
+
+  <dt>Q2: Is this a *national* park?</dt>
+  <dd>A2: Also yes! </dd>
+
+  <dt>Q3: Is this a park?</dt>
+  <dd>A3: Please refer to Question 1! </dd>
+
+  <dt>Q3: Can I climb the rocks?</dt>
+  <dd>A3: Please don't</dd>
+
+  <dt>Q4: What do I do if I see a bear?</dt>
+  <dd>A4: There aren't any bears native to our park!</dd>
+
+  <dt>Q5: Ok, but what if I did see one?</dt>
+  <dd>A5: You won't, we promise!</dd>
+
+  <dt>Q6: What if someone decides to BYOB?</dt>
+  <dd>A6: BYOB? Do you mean Bring Your Own Bear or Bring Your Own Beer? Both are not
+    permitted in our park!</dd>
+
+  <dt>Q7: What if my pet bear wants to drink tequila with me?</dt>
+  <dd>A7: Please do not bring your bear or any form of alcohol into our park!</dd>
+
+  <dt>Q8: Can I jump into the giant hole that is filled with the void of space?</dt>
+  <dd>A8: what?</dd>
+
+  <dt>Q9: I'm jumping into it!</dt>
+  <dd>A9: We don't even have a giant hole where are you going? Hey wa-</dd>
+
+  <dt>Q10: what if i wanted to feed the animals ?</dt>
+  <dd>A10: Do not feed animals </dd>
 </dl>
-<h3 id="national-parks-heading">National Parks</h3>
-<ul id="national-parks">
-  <li>Arches</li>
-  <li>Badlands</li>
-  <li>Carlsbad Caverns</li>
-  <li>Denali</li>
-  <li>Everglades</li>
+
+<h3>Guadalupe Mountains National Park</h3>
+<ul>
+  <li>In Texas</li>
+  <li>Guadalupe Mountains National Park charges a fee to enter"</li>
+  <li>Texas that features beautiful wild flowers and is rated as moderate.</li>
+  <li>The trail is primarily used for hiking, rock climbing, camping, and nature trips and is best used from March until November.</li>
 </ul>
-<h3>State Parks of Texas</h3>
-<ul id="state-parks-texas">
-  <li>Abilene</li>
-  <li>Big Bend</li>
-  <li>Choke Canyon</li>
-  <li>Davis Mountains</li>
-  <li>Enchanted Rock</li>
+
+<h3>Big Bend</h3>
+<ul>
+  <li>In Texas</li>
+  <li>Lots of Birds</li>
+  <li>Dinosaurs?</li>
+  <li>The Rio Grande is located within the Park </li>
 </ul>
-<h3>Kansas</h3>
-<ul id="kansas-national-park">
-  <li>beware bears</li>
-  <li>hidden trails</li>
-  <li>falling rocks</li>
-  <li>beware cannibals</li>
-  <li>weeping willows</li>
+
+<h3>Grand Canyon</h3>
+<ul>
+  <li>Is very Hot</li>
+  <li>Rocky</li>
+  <li>No trees</li>
+  <li>A literal Canyon</li>
 </ul>
-<script src="./js/jquery-2.2.4.js"></script>
-<script src="./js/jquery_faq.js"></script>
+
+<button class="yellow">Turn Last Li Yellow</button>
+
+<!-- START OF jQUERY -->
+<script src="js/jquery.js"></script>
+<script>
+  "use strict"
+  $(document).ready(function (){
+
+    let clicked = false;
+
+    <!--sets class "invisible" visibility to hidden -->
+    <!-- $(".invisible").css("visibility", "hidden"); -->
+
+    $("dd").addClass("invisible");
+
+    $(".answers").click(function (){
+      $("dt").removeClass("highlight");
+      $("dd").toggleClass("invisible");
+
+      if(clicked){
+        $(".answers").html("Show All Answers");
+        clicked = false;
+      }
+      else{
+        clicked = true;
+        $(".answers").html("Hide All Answers");
+      }
+    });
+
+    $("dt").click(function (){
+      $(this).toggleClass("highlight");
+    });
+
+    <!-- toggling class, additional functionality to click event to toggle that class-->
+
+    <!-- Create a button that, when clicked, makes the last li in each ul have a yellow background -->
+
+    let pushed = false;
+
+    $(".yellow").click(function (){
+
+      if(pushed){
+        $("ul").each(function (){
+          $(this).children().last().css("background-color", "white");
+        })
+        $(".yellow").html("Turn Last Li Yellow");
+        pushed = false;
+      }
+      else{
+        $("ul").each(function (){
+          $(this).children().last().css("background-color", "yellow");
+        })
+        $(".yellow").html("Remove Highlight");
+        pushed = true;
+      }
+    });
+
+    <!-- When any h3 is clicked, the lis underneath it should be bolded. Use font-weight: bold to achieve this  -->
+    $("h3").click(function (){
+      $(this).next().children().css("font-weight", "bold");
+    });
+
+    <!-- When any list item is clicked, first li of the parent ul should have a font color of blue. -->
+    $("li").click(function (){
+      $(this).parent().children().first().css("color", "blue");
+    });
+
+  });
+
+  <!-- When any list item is clicked, first li of the parent ul should have a font color of blue. -->
+
+
+
+</script>
 </body>
 </html>
